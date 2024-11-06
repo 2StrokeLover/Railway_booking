@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a class="nav-link" id="train-info-tab" data-bs-toggle="tab" href="#train-info" role="tab" aria-controls="train-info" aria-selected="true"></a>
+    <title>Train Availability</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image:url(trainImage.jpeg);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: #333;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+{
+
+}
+
+    </style>
+</head>
+<body>
+    <h1>Train Availability Information</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Train No</th>
+                <th>A/C Class Seats</th>
+                <th>Sleeper Class Seats</th>
+                <th>General Class Seats</th>
+                <th>Arrival Time</th>
+                <th>Departure Time</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12345</td>
+                <td>20 <button onclick="fare(this)"><a href="passenger_info.html">Book</a></button></td>
+                <td>50 <button onclick="fare(this)"><a href="passenger_info.html">Book</a></button></td>
+                <td>100 <button onclick="fare(this)"><a href="passenger_info.html">Book</a></button></td>
+                <td>10:30 AM</td>
+                <td>11:00 AM</td>
+                <td>2024-10-18</td>
+            </tr>
+            <tr>
+                <td>67890</td>
+                <td>15 <button onclick="fare(this)"><a href="passenger_info.html">Book</a></button></td>
+                <td>30 <button onclick="fare(this)"><a href="passenger_info.html">Book</a></button></td>
+                <td>80 <button onclick="fare(this)"><a href="passenger_info.html">Book</a></button></td>
+                <td>03:15 PM</td>
+                <td>03:45 PM</td>
+                <td>2024-10-18</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
